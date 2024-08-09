@@ -2,12 +2,36 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.violet.min.css"
+    />
     <title>Rémi PAILHAREY - Portfolio</title>
+    <style>
+      .text-primary {
+        color: var(--pico-primary);
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="container">
+      <h1>Rémi PAILHAREY</h1>
+      <h2>Développeur <span class="text-primary">full-stack</span></h2>
+      <article>
+        <p>Bienvenue sur mon portfolio !</p>
+      </article>
+    </header>
+
+    <main class="container"></main>
+
+    <footer class="container">
+      <small>Built with <a href="https://picocss.com">Pico</a></small>
+    </footer>
+
+    <!-- Minimal theme switcher -->
+    <script src="js/minimal-theme-switcher.js"></script>
   </body>
 </html>
