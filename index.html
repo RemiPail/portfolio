@@ -11,27 +11,95 @@
     />
     <title>Rémi PAILHAREY - Portfolio</title>
     <style>
-      .text-primary {
+      .color-primary {
         color: var(--pico-primary);
       }
     </style>
+    <script type="module" crossorigin src="/portfolio/assets/index-DltyQUge.js"></script>
   </head>
   <body>
     <header class="container">
-      <h1>Rémi PAILHAREY</h1>
-      <h2>Développeur <span class="text-primary">full-stack</span></h2>
-      <article>
-        <p>Bienvenue sur mon portfolio !</p>
-      </article>
+      <nav>
+        <ul>
+          <li><strong></strong></li>
+        </ul>
+        <ul>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experiences">Mes expériences</a></li>
+          <li><a href="#projects">Mes projets</a></li>
+          <li>
+            <button class="contrast" id="theme-toggle"></button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="container"></main>
+    <main class="container">
+      <h1>Rémi PAILHAREY</h1>
+      <h2>Développeur <span class="color-primary">full-stack</span>&nbsp;✨</h2>
+      <article id="about">
+        <h2 class="color-primary">A propos</h2>
+        <p>
+          Bienvenue sur mon portfolio ! Je suis un développeur full-stack, je suis passionné par les
+          technologies web et je suis intéressé par les nouvelles technologies. Je suis également un
+          amateur de musique et de jeux vidéo.
+        </p>
+      </article>
+      <article id="experiences">
+        <h2 class="color-primary">Mes expériences</h2>
+        <p>
+          J'ai travaillé pour plusieurs entreprises, notamment :
+          <ul>
+            <li>Développeur Full-Stack chez <a href="https://www.netflix.com/">Netflix</a></li>
+            <li>Développeur Full-Stack chez <a href="https://www.microsoft.com/">Microsoft</a></li>
+            <li>
+              Développeur Full-Stack chez <a href="https://www.ibm.com/">IBM</a> en tant que
+              mentor
+            </li>
+          </ul>
+      </article>
+      <article id="projects">
+        <h2 class="color-primary">Mes projets</h2>
+        <p>
+          J'ai travaillé sur plusieurs projets, notamment :
+          <ul>
+            <li>
+              <a href="https://github.com/rmp135/react-native-web-app">
+                React Native Web App
+              </a>
+              : une application React Native qui utilise le WebView pour afficher des pages web
+            </li>
+            <li>
+              <a href="https://github.com/rmp135/react-native-web-app-with-redux">
+                React Native Web App avec Redux
+              </a>
+              : une application React Native qui utilise le WebView pour afficher des pages web et
+              utilise Redux pour gérer l'état
+            </li>
+            <li>
+              <a href="https://github.com/rmp135/react-native-web-app-with-redux-saga">
+                React Native Web App avec Redux Saga
+              </a>
+              : une application React Native qui utilise le WebView pour afficher des pages web et
+              utilise Redux pour gérer l'état et Saga pour gérer les effets asynchrones
+            </li>
+            <li>
+              <a href="https://github.com/rmp135/react-native-web-app-with-redux-saga-and-apollo">
+                React Native Web App avec Redux Saga et Apollo
+              </a>
+              : une application React Native qui utilise le WebView pour afficher des pages web, utilise
+              Redux pour gérer l'état, Saga pour gérer les effets asynchrones et Apollo pour gérer
+              les requêtes GraphQL
+            </li>
+          </ul>
+        </p>
+      </article>
+    </main>
 
     <footer class="container">
       <small>Built with <a href="https://picocss.com">Pico</a></small>
     </footer>
 
     <!-- Minimal theme switcher -->
-    <script src="js/minimal-theme-switcher.js"></script>
   </body>
 </html>
